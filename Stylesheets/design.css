@@ -1,0 +1,19 @@
+#logo{
+	padding: 70px;
+	margin:0 auto;
+	width: 900px;
+	}
+
+div{
+    width: 250px;
+		margin:0 auto;
+		padding-top: 10px;
+		font-family: sans-serif;
+		font-size: 18px
+		color:#444;
+	}
+
+.title{
+		color:Red;
+		font-size: 20px;
+	}
