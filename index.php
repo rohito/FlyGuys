@@ -22,20 +22,25 @@
     <div id ="logo">
       <img src="Images/logo_1.jpg" alt="logo" >
     </div>
-    <form action="Utils/listFlights.php" method="get">
+    <form action="Utils/getFlightsByOrigin.php" method="get">
             <div>
               <label for="departure" class ="title">Enter departure from:<br></label>
             <div id="departureSearchResults">
-                <input type="text" placeholder="Departure From" name="searchFlight"><br>
+                <input type="text" placeholder="Departure From" name="searchDepartureFlight"><br>
                 <div class = "results">
                   <div class="result">data</div>
               </div>
             </div>
           </div>
-            <div>
+              <div>
               <label for="destination" class ="title">Enter destination to:<br></label>
-              <input type="text" placeholder="Destination To" name="destination"><br>
+            <div id="destinationSearchResults">
+              <input type="text" placeholder="Destination To" name="searchDestinationFlight"><br>
+              <div class = "r_des">
+                <div class="r_des_sub">data2</div>
             </div>
+            </div>
+          </div>
             <div>
               <label for="departure_date" class ="title">Choose Departure Date:<br></label>
               <input type="text" class="datepicker"></p>
@@ -56,7 +61,7 @@
                     <option value="Saturday">Saturday</option>
                     <option value="Sunday">Sunday</option>
             </select>
-            <input id="ajaxSearchButton" type="button" value="Search Flight">
+            <input id="ajaxSearchButton" type="submit" value="Search Flight">
           </div>
      </form>
      <table id="resultsTable">
@@ -69,9 +74,7 @@
        </tr>
      </thead>
      <tbody>
-       <!--JQuery from google api library ?php foreach ($flightList as $flight): ?> -->
       <tr>
-
       </tr>
     </tbody>
      </table>

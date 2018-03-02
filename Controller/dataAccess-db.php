@@ -34,6 +34,15 @@ function getFlightsByStartOfOrigin($partialFlightOrigin){
   return $users;
 }
 
+function getFlightsByStartOfDestination($partialFlightDestination){
+  global $pdo;
+  $statement = $pdo->prepare('SELECT * FROM Flight
+                              WHERE Destination like ?');
+  $statement->execute(["$partialFlightDestination%"]);
+  $users = $statement->fetchAll(PDO::FETCH_CLASS, 'Flight');
+  return $users;
+}
+
 function getFlightsByOrigin($flight){
   if ($flight == " ")
   {
@@ -47,9 +56,7 @@ function getFlightsByOrigin($flight){
   return $users;
 }
 
-function getFlightsByDestination($flight){
 
-}
 /*
 function addFlight($flight)
 {

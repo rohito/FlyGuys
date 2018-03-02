@@ -17,3 +17,18 @@ div{
 		color:Red;
 		font-size: 20px;
 	}
+
+div.results {
+	box-sizing: border-box;
+	border :1px solid gray;
+}
+
+div.r_des {
+	color: green;
+}
+
+div.results div.result:hover{
+	background-color: gray;
+	color :white;
+	cursor: pointer;
+}
