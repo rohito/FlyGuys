@@ -1,8 +1,6 @@
 <?php
-class Customer implements JsonSerializable{
-private $CustomerID;
-private $Surname;
-private $Email;
+class Journey implements JsonSerializable{
+private $JourneyID;
 
 function __get($name){
   return $this->$name;
@@ -10,11 +8,9 @@ function __get($name){
 function __set($name,$value){
   $this->$name = $value;
 }
-
 public function jsonSerialize(){
   return get_object_var($this);
 }
 
-
 }
- ?>
+?>
