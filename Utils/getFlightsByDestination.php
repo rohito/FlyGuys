@@ -1,6 +1,6 @@
 <?php
 header ('Content-Type: application/json');
-require_once ("../Model/Flight.php");
+require_once ("../Model/Model.php");
 require_once ("../Controller/dataAccess-db.php");
 
 if (!isset($_REQUEST["searchFlight"]))

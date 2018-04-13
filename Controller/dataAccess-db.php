@@ -119,4 +119,14 @@ function editDestination($flight){
                        $flight->DepartureTime]);
 }
 
+function getFlightsByStartOfDestination($partialFlightDestination){
+  global $pdo;
+  $statement = $pdo->prepare('SELECT * FROM Destination
+                              WHERE Name like ?');
+  $statement->execute(["$partialFlightDestination%"]);
+  $flights = $statement->fetchAll(PDO::FETCH_CLASS, 'Destination');
+  return $flights;
+}
+
+
 ?>

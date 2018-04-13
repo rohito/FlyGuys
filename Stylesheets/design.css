@@ -1,42 +1,118 @@
+body {
+		background-image: url("../Images/background_12.jpg");
+}
+
 #logo{
-	padding: 70px;
-	margin:0 auto;
-	width: 900px;
+	list-style: none;
+	background-color: white;
+	text-align: center;
 	}
 
-div{
-    width: 250px;
-		margin:0 auto;
-		padding-top: 10px;
-		font-family: sans-serif;
-		font-size: 18px
-		color:#444;
-	}
-<<<<<<< HEAD
+.form-to-be-filled{
+	font-family: sans-serif;
+  font-size: 1.2em;
+	color:#444;
+	color:Red;
+	list-style: none;
+	background-color: white;
+	text-align: center;
 
-.title{
-		color:Red;
-		font-size: 20px;
-	}
+}
+
+.form1 {
+		margin :20px;
+		float:left;
+		display: block;
+		padding: :20px;
+		padding-left:25%;
+}
+
+.form2{
+	float:left;
+	display: block;
+	padding :20px;
+}
+
+.form3{
+	float:left;
+	display: block;
+	padding :20px;
+}
+
+.form4{
+	float:left;
+	display: block;
+	padding :20px;
+}
+
+#ajaxSearchButton{
+	float:left;
+	margin :20px;
+}
+
 
 div.results {
-	box-sizing: border-box;
-	border :1px solid gray;
+	display : inline-block;
+	padding: 10px;
+
 }
 
 div.r_des {
-	color: green;
+	border : 1px solid gray;
+	text-align: left;
+	background-color : white;
 }
 
-div.results div.result:hover{
+.result:hover{
 	background-color: gray;
 	color :white;
 	cursor: pointer;
 }
-=======
 
-.title{
-		color:Red;
-		font-size: 20px;
-	}
->>>>>>> 339329ee49a4d3dedcc9b056b142b5ea7353045c
+
+div.nav ul {
+  list-style: none;
+  background-color: #696969;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+div.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+div.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s;
+}
+
+div.nav a:hover {
+  background-color: #005f5f;
+}
+
+div.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+div.nav li {
+	 display: inline-block;
+	 margin-right: -4px;
+ }
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }

@@ -57,6 +57,7 @@ if (sizeof($result) == 1) {
         //echo (($result[0]['Password']));
         //echo "Success";
         $_SESSION['username'] = $username;
+        $_SESSION['failed'] = false;
         //setUserType($dataName);
         header("Location: ../Admin/Home.php");
 
