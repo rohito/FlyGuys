@@ -13,6 +13,10 @@ $db_user,$db_password);
 session_start();
 require_once "../Controller/dataAccess-db.php";
 
+if (isset($_SESSION['username'])){
+  header("Location: ../Admin/Home.php");
+}
+
 
 $password = $_POST['password'];
 

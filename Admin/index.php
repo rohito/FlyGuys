@@ -3,6 +3,10 @@
       require_once "../Controller/dataAccess-db.php";
       require_once "../Model/Model.php";
 
+      if (isset($_SESSION['username'])){
+        header("Location: ../Admin/Home.php");
+      }
+
 
 ?>
 
